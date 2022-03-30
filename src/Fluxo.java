@@ -17,8 +17,9 @@ public class Fluxo {
 		for (int i = 1; i <= 5 ; i++) {
 			System.out.println(i);
 			try {
-				int a = i / 0;	
-			} catch (ArithmeticException e) {
+				Conta c = null;
+				c.deposita(i);
+			} catch (ArithmeticException | NullPointerException e) {
 				System.out.println(e);
 			}
 		}
