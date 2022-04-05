@@ -19,7 +19,7 @@ public class Fluxo {
 			try {
 				Conta c = null;
 				c.deposita(i);
-			} catch (ArithmeticException | NullPointerException e) {
+			} catch (Exception e) {
 				System.out.println(e);
 			}
 		}
